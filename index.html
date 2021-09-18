@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/JavaScript" src="script.js"></script>
+	<title>Générateur de mot de passe</title>
+</head>
+
+<body>
+    <div id="page">
+	<header>
+		<h1><span class="clignotement3">G</span><span class="clignotement2">e</span><span class="clignotement4">n</span><span class="clignotement1">e</span><span class="clignotement4">r</span><span class="clignotement2">a</span><span class="clignotement3">t</span><span class="clignotement5">e</span><span class="clignotement2">u</span><span class="clignotement5">r</span> <span class="clignotement3">d</span><span class="clignotement1">e</span> <span class="clignotement4">m</span><span class="clignotement2">o</span><span class="clignotement3">t </span><span class="clignotement5">d</span><span class="clignotement1">e</span> <span class="clignotement3">p</span><span class="clignotement2">a</span><span class="clignotement4">s</span><span class="clignotement5">s</span><span class="clignotement1">e</span></h1>
+	</header>
+    
+    <form>
+        <legend class="consigne">Choisissez <em>au moins</em> un type de caracteres :</legend>
+        <fieldset>
+         <label for="minuscules">Minuscules</label><input type="checkbox" name="minuscules" id="minuscules"/>
+         <label for="majuscules">Majuscules</label><input type="checkbox" name="majuscules" id="majuscules" />
+         <label for="chiffres">Chiffres</label><input type="checkbox" name="chiffres" id="chiffres" />
+         <label for="caracteres_speciaux">Caracteres speciaux</label><input type="checkbox" name="caracteres_speciaux" id="caracteres_speciaux"/>
+        </fieldset>
+        <label for="longueur" class="consigne">Indiquez un nombre de caracteres <em>entre 1 et 50</em> :</label></br>
+        <input type="number" name="longueur" step="1" min="1" max="50" id="longueur" required autofocus>
+    </br>
+        <button type="button" title="Générer un nouveau mot de passe" onclick="generate()">Generer</button>
+        <button type="button" title="Réinitialiser" onclick="totalReset()">Reinitialiser</button>
+    </form>
+    <p id="motdepasse"></p>
+    </div>
+</body>
+</html>

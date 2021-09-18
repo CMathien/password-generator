@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Dited1";
+  src: url("./Polices/Dited1.ttf.eot");
+  src: url("./Polices/Dited1.ttf.eot?#iefix") format("embedded-opentype"),
+    url("./Polices/Dited1.ttf.woff") format("woff"),
+    url("./Polices/Dited1.ttf.svg#Dited1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Aspect général de la page*/
+
+body {
+  background-image: url(./Assets/background.jpg);
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 125px;
+  width: 650px;
+  height: auto;
+  background: radial-gradient(black 50%, #303030 40%, black 10%);
+  border: solid 5px green;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
+  font-family: "Dited1", "Verdana";
+  color: green;
+  text-align: center;
+}
+
+/*Contenu de la page*/
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.consigne {
+  font-size: 19px;
+}
+
+em {
+  text-decoration-line: underline;
+  font-style: normal;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#longueur {
+  margin: 10px;
+}
+
+button {
+  font-family: "Dited1", Verdana;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-color: green;
+  background-color: green;
+  margin: 10px;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+#motdepasse {
+  width: auto;
+  height: auto;
+  color: green;
+  font-size: 25px;
+}
+
+/*Animations*/
+
+button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 70%;
+  cursor: grab;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+input:active {
+  cursor: grab;
+}
+
+.clignotement1 {
+  animation: blink 1200ms steps(1, start) infinite;
+}
+
+.clignotement2 {
+  animation: blink 1100ms steps(3, start) infinite;
+}
+
+.clignotement3 {
+  animation: blink 900ms steps(1, start) infinite;
+}
+
+.clignotement4 {
+  animation: blink 800ms steps(2, start) infinite;
+}
+
+.clignotement5 {
+  animation: blink 700ms steps(2, start) infinite;
+}
